@@ -26,36 +26,35 @@ body {
     display: flex;
 }
 h1{
-    font-family: "Avengeance Heroic Avenger";
-    font-size: 6rem;
-    -webkit-text-stroke: 2px #fd8e01;
+    /* font-family: */
+    font-size: 4rem;
+    -webkit-text-stroke: 1px #fd8e01;
     margin-bottom: 30px;
     box-shadow: 0px 0px 16px 
 }
 
 /* Main */
 main p {
-    font-family: "Avengeance Heroic Avenger";
+    /* font-family: "Avengeance Heroic Avenger"; */
     color: white;
-    -webkit-text-stroke: 2px #08f;
-    font-size: 2.5rem;
+    -webkit-text-stroke: 1px #08f;
+    font-size: 3rem;
     margin-left: 15px;
     margin-bottom: 15px;
 }
 form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 50%;
-    height: 500px;
+    width: 220px;
 }
 form button {
     background-image:  linear-gradient(180deg, #1c0138 0%, #2c0055 100%);
     border: 2px solid#ff00de;
     color: #08f;
-    font-family: "Gang of Three";
+    /* font-family: "Gang of Three"; */
     font-size: 2rem;
-    width: 171px;
+    margin: 5px;
+    width: 100px;
     height: 65px;
     box-shadow: 0px 0px 16px ;
     transition-duration: 0.1s;
@@ -79,10 +78,10 @@ form button:hover {
 .containerTitle h2 {
     margin-top: 0;
     margin-bottom:0;
-    font-size: 6rem;
+    font-size: 4rem;
     color: black;
-    font-family: "Avengeance Heroic Avenger";
-    -webkit-text-stroke: 2px #fd8e01;
+    /* font-family: "Avengeance Heroic Avenger"; */
+    -webkit-text-stroke: 1px #fd8e01;
 }
 
 /* ORDERED LIST OF ANIME */
@@ -102,22 +101,23 @@ ol li:not(.previous):not(.next):before {
     0 0 8rem #ff00de,
     0 0 10rem #ff00de;
     margin-top: -372px;
-    font-family: "Avengeance Heroic Avenger";
+    /* font-family: "Avengeance Heroic Avenger"; */
 }
 .container {
     display: flex;
-    width: 45%;
+    width: 75%;
     flex-wrap: wrap;
     position: absolute;
     top: 130px;
+    flex: 1 1 0px;
 }
 
 /* ORDERED LIST OF ANIME CARDS */
 .animeCard .animate__animated, 
 .animate__slideInRight {
-    width: 50%;
+    width: 20%;
     background-color: black;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: white;
     text-align:center;
 }
@@ -125,7 +125,7 @@ ol li:not(.previous):not(.next):before {
 /* TEXT INSIDE ANIME CARD*/
 .itemsInside {
     font-size: 1rem;
-    font-family: "Gang of Three";
+    /* font-family: "Gang of Three"; */
     text-shadow:
     -0.2rem -0.2rem 0.7rem #08f,
     0.2rem 0.2rem 0.7rem #08f,
@@ -137,7 +137,8 @@ ol li:not(.previous):not(.next):before {
 }
 .titleName {
     margin-bottom: 5px;
-    font-size: 1.3rem;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 .score {
     margin-top: 0;
@@ -145,37 +146,41 @@ ol li:not(.previous):not(.next):before {
 
 /* ANIME IMAGE INSIDE ANIME CARD */
 .anime-image {
-    width: 200px;
+    width: 150px;
     box-shadow: 10px 10px #fd8e01;
-    height: 300px;
+    height: 200px;
 }
 
 /* HOVER SUMMARY OVER ANIME IMAGE IN ANIME CARD */
+.link {
+    position: relative;
+}
 .image-container:hover  {
     opacity: 1;
 }
 .image-container {
-    position: relative;
+    position: absolute;
     background-color: #000c;
-    bottom: 353px;
-    left: 15px;
-    width: 310px;
-    height: 330px;
-    color: white;
-    padding: 20px;
+    top: 50%;
+    margin-top: -103px;
+    left: 50%;
+    margin-left: -75px;
+    height: 200px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
     opacity: 0;
-    margin-bottom: -360px;
+}
+.image-container p {
+    color: white;
 }
 
 /* FOOTER */
 footer  {
-    font-family: "Avengeance Heroic Avenger";
+    /* font-family: "Avengeance Heroic Avenger"; */
     color: white;
-    -webkit-text-stroke: 2px #fd8e01;
+    -webkit-text-stroke: 1px #fd8e01;
     font-size: 3rem;
     margin-top: 75px;
 }
