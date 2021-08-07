@@ -26,21 +26,21 @@ body {
     display: flex;
 }
 h1{
-    /* font-family: */
+    font-family: 'Permanent Marker', cursive;
     font-size: 4rem;
     -webkit-text-stroke: 1px #fd8e01;
-    margin-bottom: 30px;
     box-shadow: 0px 0px 16px 
 }
 
 /* Main */
-main p {
-    /* font-family: "Avengeance Heroic Avenger"; */
+h3 {
+    font-family: 'Permanent Marker', cursive;
     color: white;
     -webkit-text-stroke: 1px #08f;
     font-size: 3rem;
     margin-left: 15px;
     margin-bottom: 15px;
+    margin-top: 30px
 }
 form {
     display: flex;
@@ -51,7 +51,7 @@ form button {
     background-image:  linear-gradient(180deg, #1c0138 0%, #2c0055 100%);
     border: 2px solid#ff00de;
     color: #08f;
-    /* font-family: "Gang of Three"; */
+    font-family: 'Permanent Marker', cursive;
     font-size: 2rem;
     margin: 5px;
     width: 100px;
@@ -67,20 +67,16 @@ form button:hover {
 
 /* YEAR PER SELECTION */
 .containerTitle {
-    display:flex;
-    position: absolute;
-    right: 30%;
-    top: 1%;
+    margin-right: auto;
+    margin-left: 100px;
 }
 .containerTitle h2:not(:first-child) {
     display: none;
 }
 .containerTitle h2 {
-    margin-top: 0;
-    margin-bottom:0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black;
-    /* font-family: "Avengeance Heroic Avenger"; */
+    font-family: 'Permanent Marker', cursive;
     -webkit-text-stroke: 1px #fd8e01;
 }
 
@@ -101,7 +97,7 @@ ol li:not(.previous):not(.next):before {
     0 0 8rem #ff00de,
     0 0 10rem #ff00de;
     margin-top: -372px;
-    /* font-family: "Avengeance Heroic Avenger"; */
+    font-family: 'Permanent Marker', cursive;
 }
 .container {
     display: flex;
@@ -110,6 +106,7 @@ ol li:not(.previous):not(.next):before {
     position: absolute;
     top: 130px;
     flex: 1 1 0px;
+    right: 0;
 }
 
 /* ORDERED LIST OF ANIME CARDS */
@@ -125,7 +122,7 @@ ol li:not(.previous):not(.next):before {
 /* TEXT INSIDE ANIME CARD*/
 .itemsInside {
     font-size: 1rem;
-    /* font-family: "Gang of Three"; */
+    font-family: 'Permanent Marker', cursive;
     text-shadow:
     -0.2rem -0.2rem 0.7rem #08f,
     0.2rem 0.2rem 0.7rem #08f,
@@ -178,9 +175,64 @@ ol li:not(.previous):not(.next):before {
 
 /* FOOTER */
 footer  {
-    /* font-family: "Avengeance Heroic Avenger"; */
+    font-family: 'Permanent Marker', cursive;
     color: white;
     -webkit-text-stroke: 1px #fd8e01;
-    font-size: 3rem;
-    margin-top: 75px;
+    font-size: 20px;
+}
+
+@media (max-width:1390px) {
+    .animeCard {
+        width: 25%;
+    }
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .animeCard {
+        width: calc(100% / 3);
+    }
+    .container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 900px) {
+    .animeCard {
+        width: 50%;
+    }
+    .container{
+        width: 50%;
+    }
+}
+
+@media (max-width: 730px) {
+    .container {
+        top: 340px;
+        width: 75%;
+    }
+    .containerTitle {
+        margin-top: 75px;
+    }
+    form {
+        width: 120px;
+    }
+    footer {
+        width: 100px;
+    }
+    main h3 {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .animeCard {
+        width: 100%;
+    }
+    .container {
+        width: 250px;
+    }
 }

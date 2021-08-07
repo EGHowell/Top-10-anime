@@ -167,7 +167,7 @@ anime.getAnimeDetails = () => {
     
             seasonArray.forEach((key) => {
                 const animeTitle =
-                `<h2 class = "animate__animated animate__slideInDown">year: ${key.start_date.substring(4)}</h2>
+                `<h2 class = "animate__animated animate__slideInDown">${key.start_date.substring(4)}</h2>
                 `
                 $('.containerTitle').append(animeTitle)
 
